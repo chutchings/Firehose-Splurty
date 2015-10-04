@@ -12,6 +12,11 @@ class QuotesController < ApplicationController
 		redirect_to root_path
 	end
 
+	def api
+		@quotes = Quote.all
+		render json: ActiveModel::ArraySerializer.new(@quotes, serializer: QuoteSerializer).as_json
+	end
+
 	def about
 	end
 
