@@ -39,6 +39,8 @@ gem 'simple_form'
 
 gem 'rails_12factor', group: :production
 
+gem 'active_model_serializers'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
